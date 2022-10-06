@@ -3,25 +3,40 @@ package com.keyin.qap1;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+// This area is honestly a bit more basic.
+// I'm going to run some tests that don't use a function at all.
+// Names a bit exclusive due to originally planning of just True and False.
+// But then I discovered a few more cool asserts!
 public class TrueFalse {
+    // This one will be to see if the length of the string is 4.
     @Test
     public void test1(){
-        String thing = "Noah";
-        Assertions.assertTrue(thing.length() == 4);
+        String str = "Noah";
+        Assertions.assertTrue(str.length() == 4);
     }
+    // This one will check to see if the string ends with io.
     @Test
     public void test2(){
-        String thing = "Mio";
-        Assertions.assertTrue(thing.endsWith("anz"));
+        String str = "Mio";
+        System.out.println(str);
+        Assertions.assertTrue(str.endsWith("io"));
     }
+    // This one will see if the following string DOESN'T start with La.
     @Test
     public void test3(){
-        String thing = "Eunie";
-        Assertions.assertFalse(thing.startsWith("A"));
+        String str = "Eunie";
+        Assertions.assertFalse(str.startsWith("La"));
     }
+    // This one will observe if the following variable is null.
     @Test
     public void test4(){
-        String thing = null;
-        Assertions.assertNull(thing);
+        String str = null;
+        Assertions.assertNull(str);
+    }
+    // This one will see if the following string isn't null.
+    @Test
+    public void test5(){
+        String str = "I'M THE GIRL WITH THE GALL";
+        Assertions.assertNotNull(str);
     }
 }
