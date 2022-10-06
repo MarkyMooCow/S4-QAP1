@@ -19,7 +19,7 @@ public class CalculatorTest {
     @Test
     public void testSubtract() {
         int expectedResult = 50;
-        long result = Calc.subtract(75, 25);
+        int result = Calc.subtract(75, 25);
         System.out.println(result);
         Assertions.assertEquals(expectedResult, result);
     }
@@ -39,4 +39,14 @@ public class CalculatorTest {
         System.out.println(result);
         Assertions.assertNotEquals(unexpectedResult, result);
     }
+    /*
+    This is something I made to intentionally fail.
+    I wanted to see what happened.
+    @Test
+    public void failDivide() {
+        int expectedResult = 10;
+        long result = Calc.divide(50, 5);
+        System.out.println(result);
+        Assertions.assertNotEquals(expectedResult, result);
+    } */
 }

@@ -12,6 +12,7 @@ public class TrueFalse {
     @Test
     public void test1(){
         String str = "Noah";
+        System.out.println(str);
         Assertions.assertTrue(str.length() == 4);
     }
     // This one will check to see if the string ends with io.
@@ -25,18 +26,21 @@ public class TrueFalse {
     @Test
     public void test3(){
         String str = "Eunie";
+        System.out.println(str);
         Assertions.assertFalse(str.startsWith("La"));
     }
     // This one will observe if the following variable is null.
     @Test
     public void test4(){
         String str = null;
+        System.out.println(str);
         Assertions.assertNull(str);
     }
     // This one will see if the following string isn't null.
     @Test
     public void test5(){
         String str = "I'M THE GIRL WITH THE GALL";
+        System.out.println(str);
         Assertions.assertNotNull(str);
     }
 }
